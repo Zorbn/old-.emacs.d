@@ -1,8 +1,6 @@
 ;;; My EMACS config
 
 ;;; Variables
-(defvar main-font "Hack-11"
-  "The main font, including size")
 (defvar buffer-width 80
   "The width of the buffer in characters.")
 (defvar mouse-scroll-amount 1
@@ -36,8 +34,8 @@
 (setq use-package-always-ensure t)
 
 ;;; Theme
-(set-face-attribute 'default nil :font main-font)
-(add-to-list 'default-frame-alist '(font . main-font))
+(set-face-attribute 'default nil :font "Hack-11")
+(add-to-list 'default-frame-alist '(font . "Hack-11"))
 
 (use-package doom-themes
   :ensure t
